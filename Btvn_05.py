@@ -68,9 +68,10 @@ n = 0
 for n in range(len(s)):
     if 65 <= ord(s[n]) <= 90:
         s1 = s1 + chr(ord(s[n]) + 32)
-    else:
-        if 97 <= ord(s[n]) <= 122:
+    elif 97 <= ord(s[n]) <= 122:
             s1 = s1 + chr(ord(s[n]) - 32)
+    else:
+        s1 = s1 + s[n]
     n += 1
 print(s1)
 """
