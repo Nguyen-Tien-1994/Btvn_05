@@ -61,9 +61,20 @@ Bài 06.
 Viết chương trình đảo ngược từ ký tự thường sang ký tự hoa và từ ký tự hoa sang ký tự thường trong một chuỗi.
 """
 # Bài làm:
-"""s = input("nhập chuỗi kí tự s là:")
-print(s.upper())
-print(s.lower())"""
+"""
+s = input("nhập chuỗi kí tự s là:")
+s1 = str("")
+n = 0
+for n in range(len(s)):
+    if 65 <= ord(s[n]) <= 90:
+        s1 = s1 + chr(ord(s[n]) + 32)
+    else:
+        if 97 <= ord(s[n]) <= 122:
+            s1 = s1 + chr(ord(s[n]) - 32)
+    n += 1
+print(s1)
+"""
+
 
 
 
